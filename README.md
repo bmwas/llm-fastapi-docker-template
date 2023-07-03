@@ -19,5 +19,5 @@ docker buildx build --push \
 ### Run the application using Docker
 
 ```bash
-docker run --gpus all ghcr.io/premai-io/chat-falcon-7b-instruct-gpu:latest
+docker run --gpus all -p 8000:8000 ghcr.io/premai-io/chat-falcon-7b-instruct-gpu:latest
 ```
