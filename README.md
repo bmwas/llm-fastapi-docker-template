@@ -16,8 +16,8 @@ docker buildx build --push \
     .
 ```
 
-### Run the tests using Docker
+### Run the application using Docker
 
 ```bash
-docker run --gpus all ghcr.io/premai-io/chat-falcon-7b-instruct-gpu:latest pytest
+docker run --gpus all ghcr.io/premai-io/chat-falcon-7b-instruct-gpu:latest
 ```
