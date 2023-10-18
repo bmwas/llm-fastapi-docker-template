@@ -10,10 +10,11 @@ RUN pip install --no-cache-dir -r ./requirements.txt --upgrade pip
 
 COPY download.py .
 
-RUN python3 download.py --model $MODEL_ID
+## change - tiiuae/falcon-7b-instruct witth $MODEL_ID but for now hard coded.
+RUN python3 download.py --model tiiuae/falcon-7b-instruct
 
 COPY . .
 
-ENV MODEL_ID=$MODEL_ID
+ENV MODEL_ID=tiiuae/falcon-7b-instruct
 
 CMD python3 main.py
